@@ -3,28 +3,32 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     position: absolute;
-    z-index: 1;
 }
 
 #grid {
-    width: 300px;
-    height: 200px; 
+    width: 90vw;
+    height: 30vh; 
     position: absolute;
     top: 200px;
     left: 50%;
-    
+    border-radius: 3px;
+    border-color: red;
 }
 
 .pup {
     border-radius: 3px;
     border-color: red;
+    background-image: url("images/dog.jpg");
+    width: 20vw;
+    display: block;
+    margin: auto;
+    background-repeat: no-repeat;
 }
 
-
-
-
-#pup1 {
-    background-image: url("images/dog.jpg");
-    position: absolute;
-    z-index: 2;
+h1 {
+    position: relative;
+    display: flex;
+    text-align: center;
+    align-content: center;
+    margin: auto;
 }
