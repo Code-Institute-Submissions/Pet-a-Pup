@@ -6,36 +6,88 @@ body {
     background-image: url("images/landscape.png");
     background-repeat: no-repeat;
     background-size: cover;
-    position: relative;
+    position: absolute;
     background-color: blue;
-    height: 100%;
+    height: 100vh;
+    width: 100%;
 }
 
 #grid {
-    height: 30%; 
+    height: 50%; 
+    width: 90%;
     position: absolute;
     left: 50%;
     transform: translate(-50%, 90%);
-    border: 3px solid red;
+    bottom: 50%;
 }
 
-.pup {
-    background-image: url("images/puppy-3546976.svg");
-    justify-content: space-evenly;
-    width: 30%;
-    height: 15vh;
+.hole {
+    justify-content: center;
+    width: 25vw;
+    height: 25vh;
     display: inline-block;
     position: relative;
     background-repeat: no-repeat;
-    background-size: cover;
+    object-fit: cover;
     overflow: hidden;
-    flex-wrap: wrap;
+    margin: 1vw;
 }
 
-h1 {
+.pup {
+    width: 100%;
+    height: 100%;
     position: relative;
-    display: flex;
+    display: inline-block;
+    background-repeat: no-repeat;
+    object-fit: cover;
+    overflow: hidden;
+}
+
+.title {
+    position: relative;
     text-align: center;
     align-content: center;
-    margin: auto;
+    color: orange;
+    font-size: 7vw;
+}
+
+#time-left {
+    position: relative;
+    text-align: center;
+    align-content: center;
+    color: orange;
+    font-size: 4vw;
+}
+
+#start {
+    position: relative;
+    text-align: center;
+    align-content: center;
+    color: orange;
+    font-size: 2vw;
+    background-color: blue;
+}
+
+#pup1 {
+    background-image: url("images/puppy-3.svg")
+}
+
+#pup2 {
+    background-image: url("images/puppy-2.svg")
+}
+
+#pup3 {
+    background-image: url("images/puppy-10.svg")
+}
+
+#pup4 {
+    background-image: url("images/puppy-4.svg")
+}
+
+#pup5 {
+    background-image: url("images/puppy-3.svg")
+}
+
+#pup6 {
+    background-image: url("images/puppy-4.svg")
 }
