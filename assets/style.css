@@ -1,0 +1,30 @@
+body {
+    background-image: url("images/landscape.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    z-index: 1;
+}
+
+#grid {
+    width: 300px;
+    height: 200px; 
+    position: absolute;
+    top: 200px;
+    left: 50%;
+    
+}
+
+.pup {
+    border-radius: 3px;
+    border-color: red;
+}
+
+
+
+
+#pup1 {
+    background-image: url("images/dog.jpg");
+    position: absolute;
+    z-index: 2;
+}
