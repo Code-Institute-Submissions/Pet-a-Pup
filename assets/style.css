@@ -41,6 +41,12 @@ body {
     background-repeat: no-repeat;
     object-fit: cover;
     overflow: hidden;
+    left: 100%;
+    transition: 0.5s;
+}
+
+.hole.up .pup {
+    top: 0;
 }
 
 .title {
@@ -91,3 +97,4 @@ body {
 #pup6 {
     background-image: url("images/puppy-4.svg")
 }
+
