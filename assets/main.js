@@ -1,6 +1,6 @@
 const pup = document.querySelectorAll(".pup");
 const holes = document.querySelectorAll(".hole");
-const timeLeft = document.getElementById("time-left");
+const score = document.getElementById("score");
 const startButton = document.getElementById("start");
 
 let prevHole;
@@ -17,7 +17,7 @@ function randomHole(holes) {
 
 function pupOut() {
     const hole = randomHole(holes);
-    const time = Math.random() * 1000 + 500;
+    const time = Math.random() * 2000 + 500;
     hole.classList.add("up");
     setTimeout(function(){
         hole.classList.remove("up");
@@ -25,6 +25,11 @@ function pupOut() {
     }, time);
 }
 
-function startPet() {
+//function pet(function(){
+    
+//})
 
-}
+//function startGame() {
+  //  pupOut();
+    
+//}

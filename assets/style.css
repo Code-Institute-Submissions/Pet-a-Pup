@@ -45,6 +45,10 @@ body {
     transition: 0.5s;
 }
 
+.pup:hover {
+    transform: scale(1.2) rotate(0.1)
+}
+
 .hole.up .pup {
     top: 0;
 }
@@ -57,7 +61,17 @@ body {
     font-size: 7vw;
 }
 
-#time-left {
+.title:hover {
+    color: yellow;
+    transition: 1s;
+}
+
+.title:active {
+    color: yellow;
+    font-size: 6vw;
+}
+
+#score {
     position: relative;
     text-align: center;
     align-content: center;
