@@ -1,5 +1,6 @@
-body {
+* {
     margin: 0;
+    padding-bottom: 0;
 }
 
 .background {
@@ -13,12 +14,12 @@ body {
 }
 
 #grid {
-    height: 50%; 
+    height: 50%;
     width: 90%;
     position: absolute;
     left: 50%;
     transform: translate(-50%, 90%);
-    bottom: 50%;
+    bottom: 60%;
 }
 
 /*----Pup----*/
@@ -58,16 +59,16 @@ body {
 /*----Cat----*/
 
 .pole {
-    justify-content: center;
-    width: 10px;
-    height: 20px;
+    width: 15vw;
+    height: 21vw;
     position: relative;
     background-repeat: no-repeat;
     object-fit: cover;
     overflow: hidden;
-    margin: 1vw;
-    z-index: 100;
-    border: 2px red;
+    margin: 5vw;
+    display: inline-block;
+    bottom: 100%;
+    left: 22%;
 }
 
 .cat {

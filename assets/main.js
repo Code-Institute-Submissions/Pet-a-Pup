@@ -5,6 +5,7 @@ const holes = document.querySelectorAll(".hole");
 const scoreDisplay = document.getElementById("score");
 const startButton = document.getElementById("start");
 const magicDog = document.getElementById("pup3")
+const cats = document.getElementsByClassName("cat");
 
 //Select random hole
 
@@ -36,7 +37,7 @@ function pupOut() {
     }, time);
 }
 
-//Petting functions, to add score as mouse moves over, also magic dog function to add extra points
+//Petting functions
 
 let score = 0;
 
@@ -47,15 +48,21 @@ function pet(e){
 pups.forEach(pup => pup.addEventListener("mousemove", pet));
 
 
-//pups.forEach(pup => pup.addEventListener("onmousemove", pet));
+/*function petCat(e){
+    score--;
+    scoreDisplay.textContent = score;
+}
+cats.forEach(cat => cat.addEventListener("mousemove", petCat));
 
-/*function magicPet(e) {
+function magicPet(e) {
     score+100;
     score.textContent = score;
 }
 magicDog.addEventListener("click", magicPet);
 function blackCat score-1000;
 */
+
+//Start game with reset at end
 
 function startGame() {
     score = 0;
