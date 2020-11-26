@@ -30,7 +30,9 @@ function pupOut() {
     hole.classList.add("up");
     setTimeout(function(){
         hole.classList.remove("up");
-        if (!timeUp) pupOut();
+        if (timeUp = false) {
+            pupOut();
+        } 
     }, time);
 }
 
@@ -59,8 +61,8 @@ function startGame() {
     score = 0;
     score.textContent = 0;
     setTimeout(function(){
-        alert("You scored points");
+        alert("You petted x dogs");
         timeUp = true;
-    }, 600)
+    }, 2000)
     pupOut();
 }
