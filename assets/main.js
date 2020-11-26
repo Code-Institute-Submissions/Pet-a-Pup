@@ -1,9 +1,17 @@
-const pup = document.querySelectorAll(".pup");
+// HTML-elements
+
+const pups = document.querySelectorAll(".pup");
 const holes = document.querySelectorAll(".hole");
-const score = document.getElementById("score");
+const scoreDisplay = document.getElementById("score");
 const startButton = document.getElementById("start");
+const magicDog = document.getElementById("pup3")
+
+//Auxilliary declarations
 
 let prevHole;
+let remainingTime = 60000; 
+
+//Select random hole
 
 function randomHole(holes) {
     const holeId = Math.floor(Math.random() * holes.length);
@@ -15,6 +23,8 @@ function randomHole(holes) {
     return hole;
 }
 
+// Make pup come out function
+
 function pupOut() {
     const hole = randomHole(holes);
     const time = Math.random() * 2000 + 500;
@@ -25,11 +35,35 @@ function pupOut() {
     }, time);
 }
 
-//function pet(function(){
-    
-//})
+//Petting functions, to add score as mouse moves over, also magic dog function to add extra points
 
-//function startGame() {
-  //  pupOut();
-    
-//}
+let score = 0;
+
+function pet(e){
+    score++;
+    scoreDisplay.textContent = score;
+}
+pups.forEach(pup => pup.addEventListener("mousemove", pet));
+
+
+
+
+//pups.forEach(pup => pup.addEventListener("onmousemove", pet));
+
+/*function magicPet(e) {
+    score+100;
+    score.textContent = score;
+}
+magicDog.addEventListener("click", magicPet);
+function blackCat score-1000;
+*/
+
+function startGame() {
+    score = 0;
+    score.textContent = 0;
+    countdown = 60;
+    setTimeout(function(){
+        alert("You scored $")
+    }, 60000)
+    pupOut();
+}

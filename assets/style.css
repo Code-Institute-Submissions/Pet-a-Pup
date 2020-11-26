@@ -31,6 +31,7 @@ body {
     object-fit: cover;
     overflow: hidden;
     margin: 1vw;
+    outline: none;
 }
 
 .pup {
@@ -43,6 +44,7 @@ body {
     overflow: hidden;
     top: 100%;
     transition: 0.5s;
+    outline: none;
 }
 
 .pup:hover {
