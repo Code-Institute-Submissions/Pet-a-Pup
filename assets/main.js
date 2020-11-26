@@ -1,4 +1,4 @@
-// HTML-elements
+// HTML-declarations
 
 const pups = document.querySelectorAll(".pup");
 const holes = document.querySelectorAll(".hole");
@@ -6,12 +6,9 @@ const scoreDisplay = document.getElementById("score");
 const startButton = document.getElementById("start");
 const magicDog = document.getElementById("pup3")
 
-//Auxilliary declarations
+//Select random hole
 
 let prevHole;
-let remainingTime = 60000; 
-
-//Select random hole
 
 function randomHole(holes) {
     const holeId = Math.floor(Math.random() * holes.length);
@@ -25,13 +22,15 @@ function randomHole(holes) {
 
 // Make pup come out function
 
+let timeUp = false;
+
 function pupOut() {
     const hole = randomHole(holes);
     const time = Math.random() * 2000 + 500;
     hole.classList.add("up");
     setTimeout(function(){
         hole.classList.remove("up");
-        pupOut();
+        if (!timeUp) pupOut();
     }, time);
 }
 
@@ -44,8 +43,6 @@ function pet(e){
     scoreDisplay.textContent = score;
 }
 pups.forEach(pup => pup.addEventListener("mousemove", pet));
-
-
 
 
 //pups.forEach(pup => pup.addEventListener("onmousemove", pet));
@@ -61,9 +58,9 @@ function blackCat score-1000;
 function startGame() {
     score = 0;
     score.textContent = 0;
-    countdown = 60;
     setTimeout(function(){
-        alert("You scored $")
-    }, 60000)
+        alert("You scored points");
+        timeUp = true;
+    }, 600)
     pupOut();
 }
