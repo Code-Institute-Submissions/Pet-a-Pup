@@ -61,8 +61,8 @@ function startGame() {
     score = 0;
     score.textContent = 0;
     setTimeout(function(){
-        alert("You petted x dogs");
+        alert("You petted dogs");
         timeUp = true;
-    }, 2000)
+    }, Math.random() * 60000 + 30000)
     pupOut();
 }
