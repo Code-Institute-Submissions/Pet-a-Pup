@@ -24,22 +24,16 @@ function randomHole(holes) {
 
 let timeUp = false;
 
-function pupOut() {
-    if (timeUp) {
-        return;
-    }
-    const hole = randomHole(holes);
-    const time = Math.random() * 2000 + 500;
-    hole.classList.add("up");
-    timeUp = true;
-    setTimeout(function(){
-        hole.classList.remove("up");
-        //if (timeUp = false) {
-         //   pupOut();
-        //} 
-        timeUp = false;
-    }, time);
+function pupOut() {
+    const hole = randomHole(holes);
+    const time = Math.random() * 2000 + 500;
+    hole.classList.add("up");
+    setTimeout(function () {
+        hole.classList.remove("up");
+        if (!timeUp) pupOut();
+    }, time);
 }
+
 
 //Petting functions, to add score as mouse moves over, also magic dog function to add extra points
 
@@ -51,27 +45,19 @@ function pet(e){
 }
 pups.forEach(pup => pup.addEventListener("mousemove", pet));
 
-//pups.forEach(pup => pup.addEventListener("onmousemove", pet));
-
-/*function magicPet(e) {
-    score+100;
-    score.textContent = score;
-}
-magicDog.addEventListener("click", magicPet);
-function blackCat score-1000;
-*/
-
 function startGame() {
     score = 0;
     score.textContent = 0;
-    setInterval(function () {
-        /*setTimeout(function () {
-            alert("You petted x dogs");
-            timeUp = true;
-            pupOut();
-        }, Math.random() * 6000)*/
-        pupOut();
-    }, 1000);
+    setTimeout(function () {
+        alert("You scored $")
+        timeUp = true;
+    }, 6000)
+    pupOut();
+} 
+
+function playAgain() {
+    timeUp = false;
+    startGame();
 }
     
-    
+
