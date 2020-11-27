@@ -1,6 +1,9 @@
 * {
     margin: 0;
     padding-bottom: 0;
+    font-family: 'Shadows Into Light Two', cursive;
+
+
 }
 
 .background {
@@ -61,22 +64,21 @@
 
 /*----Headings etc.----*/
 
+.overlay {
+    height: 30vh;
+}
+
 .title {
     position: relative;
     text-align: center;
     align-content: center;
-    color: purple;
+    color: orange;
     font-size: 7vw;
 }
 
 .title:hover {
     color: yellow;
     transition: 1s;
-}
-
-.title:active {
-    color: yellow;
-    font-size: 6vw;
 }
 
 #score {
@@ -87,6 +89,11 @@
     font-size: 4vw;
 }
 
+#score:hover {
+    color: yellow;
+    transition: 1s;
+}
+
 #start {
     position: relative;
     text-align: center;
@@ -95,6 +102,47 @@
     font-size: 2vw;
     background-color: blue;
 }
+
+.start-button {    
+    position: relative;
+    width: 12vw;
+    height: 6vw;
+    align-content: center;
+    left: 50%;
+    transform: translate(-50%, -7%);
+    font-size: calc(9px + 0.7vw);
+    min-width: 76px;
+    min-height: 38px;
+    border-radius: 60px 10px;
+    background-color: snow;
+    color: orange;
+}
+
+.start-button:hover {
+    background-color: plum;
+    color: yellow;
+    transition: 0.3s;
+}
+
+
+
+/*----Navbar----*/
+
+.nav-link {
+    text-align: center;
+    color: snow;
+}
+
+#nav {
+    background-color: darkorange;;
+}
+
+.nav-link:hover {
+    background-color: yellow;
+    transition: 1s;
+    color:orange;
+}
+
 
 /*----Pup unique images----*/
 
