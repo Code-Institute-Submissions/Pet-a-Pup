@@ -6,6 +6,12 @@ const scoreDisplay = document.getElementById("score");
 const startButton = document.getElementById("start");
 const magicDog = document.getElementById("pup3")
 
+
+// Prompt let name = document.getElementById("player-name");
+
+let playerName = window.prompt("Please Enter Name", "doglover1290");
+document.getElementById("player-name").innerHTML = playerName;
+
 //Select random hole
 
 let prevHole;
