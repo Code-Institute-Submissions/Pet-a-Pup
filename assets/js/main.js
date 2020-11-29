@@ -7,10 +7,28 @@ const startButton = document.getElementById("start");
 const magicDog = document.getElementById("pup3")
 
 
-// Prompt let name = document.getElementById("player-name");
+/* Prompt let name = document.getElementById("player-name");
 
 let playerName = window.prompt("Please Enter Name", "doglover1290");
 document.getElementById("player-name").innerHTML = playerName;
+
+function submitName(e) {
+    namePrompt.classList.add("hidden");
+
+nameButton.addEventListener("click", nameButton);
+}
+*/
+
+const nameButton = document.getElementById("submit");
+let playerName = document.getElementById("player-name");
+let writeName = document.getElementById("enter-name");
+const namePrompt = document.getElementById("prompt");
+
+function enterName() {
+    namePrompt.classList.add("hidden");
+    playerName.innerHTML = writeName.value;
+}
+
 
 //Select random hole
 

@@ -61,6 +61,40 @@
 
 /*----Cat----*/
 
+/*---Enter Name Prompt---*/
+
+#prompt {
+    background-color:rgba(255, 250, 250, 0.5);
+    position: absolute;
+    z-index: 999; 
+    height: 100%;
+    width: 100%;
+    text-align: center;
+}
+
+.form-group {
+    position: relative;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: calc(100px + 10vw);
+    background-color: lavender;
+    color: black;
+    border-radius: 60px 10px;
+}
+
+#submit {
+    padding-top: 2%; 
+}
+
+#name-title {
+    padding-top: 2%;
+}
+
+.hidden {
+    display: none;
+}
+
 
 /*----Headings etc.----*/
 
@@ -93,7 +127,7 @@
     color: yellow;
     transition: 1s;
 }
-
+/*
 #start {
     position: relative;
     text-align: center;
@@ -101,7 +135,7 @@
     color: orange;
     font-size: 2vw;
     background-color: blue;
-}
+} */
 
 .start-button {    
     position: relative;
@@ -139,6 +173,12 @@
     text-align: center;
     border: 2px solid black;
     padding: 7% 0% 7% 0%;
+}
+
+#player-name:hover {
+    background-color: plum;
+    color: yellow;
+    transition: 0.3s;
 }
 
 .player {
