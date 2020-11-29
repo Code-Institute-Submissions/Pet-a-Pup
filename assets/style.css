@@ -115,6 +115,7 @@
     border-radius: 60px 10px;
     background-color: snow;
     color: orange;
+    border: 2px solid black;
 }
 
 .start-button:hover {
@@ -123,7 +124,7 @@
     transition: 0.3s;
 }
 
-.player {
+#player-name {
     position: relative;
     width: 12vw;
     height: 6vw;
@@ -137,6 +138,15 @@
     color: orange;
     text-align: center;
     border: 2px solid black;
+    padding: 7% 0% 7% 0%;
+}
+
+.player {
+    position: relative;
+    align-content: center;
+    display: inline-flex;
+    left: 50%;
+    transform: translate(-50%, 10px);
 }
 
 
