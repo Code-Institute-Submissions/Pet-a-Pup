@@ -20,13 +20,23 @@
 		<li class="col-4 nav-item"><a href="about.html" class="nav-link">About</a></li>
 	</ul>
 
-        <form id="prompt">
+        <form id="prompt" class="hidden">
             <div class="form-group">
                 <label for="enter-name" id="name-title">ENTER NAME</label>
-                <input type="text" class="form-control" id="enter-name" placeholder="ProfessionalPetter">
-                <label onclick="enterName()" for="nothing" id="submit">Submit</label>
+                <input type="text" class="form-control" id="enter-name" placeholder="ProfessionalPetter123">
+                <label onclick="submitName()" for="nothing" id="submit">Submit</label>
             </div>
         </form>
+        <div id="scorecard">
+            <div id="card">
+                <img src="assets/images/tolling.jpg" alt="Picture of dog" id="score-dog">
+                <p>Well done! You petted a lot of dogs!</p>
+                <a onclick="showTopScores()" href="topscores.html">Show Top Dogs</a>
+                <a onclick="playAgain()" id="play-again"></a>
+            </div>
+        </div>
+
+    
 
 	<div class="background">
 		<div class="overlay">

@@ -24,7 +24,7 @@ let playerName = document.getElementById("player-name");
 let writeName = document.getElementById("enter-name");
 const namePrompt = document.getElementById("prompt");
 
-function enterName() {
+function submitName() {
     namePrompt.classList.add("hidden");
     playerName.innerHTML = writeName.value;
 }
