@@ -1,4 +1,4 @@
-// HTML-declarations
+//Fundamental HTML-declarations for game functionality
 
 const pups = document.querySelectorAll(".pup");
 const holes = document.querySelectorAll(".hole");
@@ -7,17 +7,7 @@ const startButton = document.getElementById("start");
 const magicDog = document.getElementById("pup3")
 
 
-/* Prompt let name = document.getElementById("player-name");
-
-let playerName = window.prompt("Please Enter Name", "doglover1290");
-document.getElementById("player-name").innerHTML = playerName;
-
-function submitName(e) {
-    namePrompt.classList.add("hidden");
-
-nameButton.addEventListener("click", nameButton);
-}
-*/
+// Enter name prompt
 
 const nameButton = document.getElementById("submit");
 let playerName = document.getElementById("player-name");
@@ -58,7 +48,7 @@ function pupOut() {
     }, time);
 }
 
-//Petting functions, to add score as mouse moves over
+//Game functions
 
 let score = 0;
 
@@ -89,4 +79,23 @@ function playAgain() {
     startGame();
 }
     
+
+let scoreArray = [
+    {
+    "name": "Jeff",
+    "score": "4120"
+}, {
+    "name": "Jane",
+    "score": "3215"
+}, {
+    "name": "Jim",
+    "score": "2145"
+}, {
+    "name": "Johanna",
+    "score": "4632"
+}, {
+    "name": "Jessica",
+    "score": "2736"
+}
+]
 
