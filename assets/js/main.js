@@ -58,8 +58,7 @@ function pupOut() {
     }, time);
 }
 
-
-//Petting functions, to add score as mouse moves over, also magic dog function to add extra points
+//Petting functions, to add score as mouse moves over
 
 let score = 0;
 
@@ -69,11 +68,16 @@ function pet(e){
 }
 pups.forEach(pup => pup.addEventListener("mousemove", pet));
 
+const scoreText = document.getElementById("score-text");
+const scoreCard = document.getElementById("scorecard");
+
 function startGame() {
     score = 0;
     score.textContent = 0;
     setTimeout(function () {
-        alert("You scored $")
+        let points = score;
+        scoreCard.classList.remove("hidden");
+        scoreText.innerHTML = `Well done ${playerName.innerText} you scored ${points}!`;
         timeUp = true;
     }, 6000)
     pupOut();
@@ -81,6 +85,7 @@ function startGame() {
 
 function playAgain() {
     timeUp = false;
+    scoreCard.classList.add("hidden");
     startGame();
 }
     
