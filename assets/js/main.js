@@ -69,6 +69,11 @@ function startGame() {
         scoreCard.classList.remove("hidden");
         scoreText.innerHTML = `Well done ${playerName.innerText} you scored ${points}!`;
         timeUp = true;
+        let roundScore = {
+            "name": playerName.innerText,
+            "score": points
+        };
+        scoresArray.push(roundScore);
     }, 6000)
     pupOut();
 } 
@@ -142,4 +147,6 @@ function generateScoreBoard(objects) {
 function updateScores() {
     generateScoreBoard(scoresArray)
 }; 
+
+//make function to save score (call via button on end game screen instead of "view high scores")
 
