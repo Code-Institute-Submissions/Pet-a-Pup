@@ -79,8 +79,20 @@ function playAgain() {
     startGame();
 }
     
+let topScoresToArray = [];
+$("#generate-array").click(function(){
+    $("#top-scores tr").each(function() {
+    var scoreArray = [];
+    var findScore = $(this).filter("td");
+    scoreArray.push(findScore.text);
+    topScoresToArray.push(scoreArray);
+});
+});
 
-let scoreArray = [
+
+
+
+let scoreList = [
     {
     "name": "Jeff",
     "score": "4120"
@@ -98,4 +110,10 @@ let scoreArray = [
     "score": "2736"
 }
 ]
+
+let topFiveList = [];
+
+function updateTopScores() {
+
+}
 
