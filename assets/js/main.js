@@ -78,7 +78,14 @@ function playAgain() {
     scoreCard.classList.add("hidden");
     startGame();
 }
-    
+
+
+/*
+function thisRoundScore(name, score) {
+    this.name = name;
+    this.score = score;
+}
+
 let topScoresToArray = [];
 $("#generate-array").click(function(){
     $("#top-scores tr").each(function() {
@@ -89,31 +96,50 @@ $("#generate-array").click(function(){
 });
 });
 
-
-
-
-let scoreList = [
-    {
-    "name": "Jeff",
-    "score": "4120"
-}, {
-    "name": "Jane",
-    "score": "3215"
-}, {
-    "name": "Jim",
-    "score": "2145"
-}, {
-    "name": "Johanna",
-    "score": "4632"
-}, {
-    "name": "Jessica",
-    "score": "2736"
-}
-]
-
 let topFiveList = [];
 
 function updateTopScores() {
+} */
 
+scoresArray = [ {
+    "name" : "Jeff",
+    "score": 1539
+}, {
+    "name" : "Johanna",
+    "score": 1435
+}, {
+    "name" : "Jim",
+    "score": 1476
+}, {
+    "name" : "Jessica",
+    "score": 1846
+}, {
+    "name" : "Jasmine",
+    "score": 1677
+}, 
+]
+
+scoresArray.sort(function(a, b) {
+    return b.score - a.score;
+});
+
+const topScores = document.getElementById("top-scores");
+
+function generateScoreBoard(objects) {
+    let position = 0;
+    for (let i = 0; i < 5; i++){
+        position++;
+        var playerScore = `<tr>
+                        <th scope="row">${position}</th>
+                            <td>${objects[i].name}</td>
+                            <td>${objects[i].score}</td>
+                        </tr>
+                                 `
+        topScores.innerHTML += playerScore;
+    }
 }
+
+function updateScores() {
+    generateScoreBoard(scoresArray)
+}; 
 
