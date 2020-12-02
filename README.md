@@ -87,8 +87,31 @@ design differences in HTML/CSS pretty early on. A simple wireframe was made here
 * Testing
 * Deployment
 ** Local Deployment
+
+
 * Credits
-** Code
-** Content and Media
+** Images
+
+Tolling retriever: <span>Photo by <a href="https://unsplash.com/@jamie452?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Jamie Street</a> on <a href="https://unsplash.com/s/photos/dog?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span>
+
+Wizard Goldie: Image by <a href="https://pixabay.com/users/clker-free-vector-images-3736/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=47229">Clker-Free-Vector-Images</a> from <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=47229">Pixabay</a>
+
+Pup with bone: Image by <a href="https://pixabay.com/users/grafikacesky-947552/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=1305702">grafikacesky</a> from <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=1305702">Pixabay</a>
+
+Beagle pup: Image by <a href="https://pixabay.com/users/clker-free-vector-images-3736/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=48472">Clker-Free-Vector-Images</a> from <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=48472">Pixabay</a>
+
+Dalmatian: Image by <a href="https://pixabay.com/users/openclipart-vectors-30363/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=150954">OpenClipart-Vectors</a> from <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=150954">Pixabay</a>
+
 ** Acknowledgements
+
+*** CodeInstitute -- This is a CodeInstitute project and the learning material led to this project and provided me with an understanding
+of basic javascript concepts.
+
+*** https://www.freecodecamp.org/ -- resources and free courses further enhanced understanding of basic javascript.
+
+*** https://wesbos.com/courses - JavaScript30.com -- Helped me understand javascript much better and was important both for the basic setup
+of the game as well as usage of local storage.  
+
+*** https://developer.mozilla.org/ & https://www.w3schools.com/ -- both have been a reference for me throughout the project.  
+
 *Disclaimer

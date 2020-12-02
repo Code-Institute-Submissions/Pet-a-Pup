@@ -15,12 +15,12 @@
 }
 
 #grid {
-    height: 50%;
+    height: calc(100px + 20vh);
     width: 90%;
     position: absolute;
     left: 50%;
     transform: translate(-50%, 90%);
-    bottom: 60%;
+    bottom: 55%;
 }
 
 /*----Pup----*/
