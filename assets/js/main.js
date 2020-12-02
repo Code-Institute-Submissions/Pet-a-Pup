@@ -15,6 +15,7 @@ let writeName = document.getElementById("enter-name");
 const namePrompt = document.getElementById("prompt");
 
 function submitName() {
+    
     namePrompt.classList.add("hidden");
     playerName.innerHTML = writeName.value;
 }
@@ -84,28 +85,6 @@ function playAgain() {
     startGame();
 }
 
-
-/*
-function thisRoundScore(name, score) {
-    this.name = name;
-    this.score = score;
-}
-
-let topScoresToArray = [];
-$("#generate-array").click(function(){
-    $("#top-scores tr").each(function() {
-    var scoreArray = [];
-    var findScore = $(this).filter("td");
-    scoreArray.push(findScore.text);
-    topScoresToArray.push(scoreArray);
-});
-});
-
-let topFiveList = [];
-
-function updateTopScores() {
-} */
-
 scoresArray = [ {
     "name" : "Jeff",
     "score": 1539
@@ -114,7 +93,7 @@ scoresArray = [ {
     "score": 1435
 }, {
     "name" : "Jim",
-    "score": 1476
+    "score": 14
 }, {
     "name" : "Jessica",
     "score": 1846
@@ -144,9 +123,16 @@ function generateScoreBoard(objects) {
     }
 }
 
-function updateScores() {
-    generateScoreBoard(scoresArray)
-}; 
+function submitScore() {
+    localStorage.setItem("topScoreList", JSON.stringify(scoresArray));
+    generateScoreBoard(scoresArray);
+}
+
+function updateScores() {
+    let updatedScores = JSON.parse(localStorage.getItem("topScoreList"));
+    generateScoreBoard(updatedScores)
+};
+
 
 //make function to save score (call via button on end game screen instead of "view high scores")
 
