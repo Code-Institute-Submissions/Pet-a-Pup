@@ -15,7 +15,11 @@ let writeName = document.getElementById("enter-name");
 const namePrompt = document.getElementById("prompt");
 
 function submitName() {
-    
+    let x = writeName.value;
+    if (x === "") {
+        alert("Write a name!");
+        return;
+    }
     namePrompt.classList.add("hidden");
     playerName.innerHTML = writeName.value;
 }
