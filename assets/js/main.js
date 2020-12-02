@@ -24,7 +24,6 @@ function submitName() {
     playerName.innerHTML = writeName.value;
 }
 
-
 //Select random hole
 
 let prevHole;
@@ -129,12 +128,12 @@ function generateScoreBoard(objects) {
 
 function submitScore() {
     localStorage.setItem("topScoreList", JSON.stringify(scoresArray));
-    generateScoreBoard(scoresArray);
+    //generateScoreBoard(scoresArray);
 }
 
 function updateScores() {
     let updatedScores = JSON.parse(localStorage.getItem("topScoreList"));
-    generateScoreBoard(updatedScores)
+    generateScoreBoard(updatedScores);
 };
 
 
