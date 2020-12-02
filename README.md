@@ -1,3 +1,6 @@
+Table of contents
+
+
 * UX
 ** Project Goals
 
@@ -85,6 +88,9 @@ design differences in HTML/CSS pretty early on. A simple wireframe was made here
     The project has been created with the help of Gitpod and is hosted to Github pages. 
 
 * Testing
+
+
+
 * Deployment
 ** Local Deployment
 
