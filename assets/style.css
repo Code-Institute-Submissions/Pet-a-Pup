@@ -1,253 +1,249 @@
 * {
-    margin: 0;
-    padding-bottom: 0;
-    font-family: 'Shadows Into Light Two', cursive;
+  margin: 0;
+  padding-bottom: 0;
+  font-family: "Shadows Into Light Two", cursive;
 }
 
 .background {
-    background-image: url("images/landscape.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: absolute;
-    background-color: blue;
-    height: 100vh;
-    width: 100%;
+  background-image: url("images/landscape.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  background-color: blue;
+  height: 100vh;
+  width: 100%;
 }
 
 #grid {
-    height: calc(100px + 20vh);
-    width: 90%;
-    position: absolute;
-    left: 50%;
-    transform: translate(-50%, 90%);
-    bottom: 55%;
+  height: calc(100px + 20vh);
+  width: 90%;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 90%);
+  bottom: 55%;
 }
 
 /*----Pup----*/
 
 .hole {
-    justify-content: center;
-    width: 25vw;
-    height: 25vh;
-    display: inline-block;
-    position: relative;
-    background-repeat: no-repeat;
-    object-fit: cover;
-    overflow: hidden;
-    margin: 1vw;
+  justify-content: center;
+  width: 25vw;
+  height: 25vh;
+  display: inline-block;
+  position: relative;
+  background-repeat: no-repeat;
+  object-fit: cover;
+  overflow: hidden;
+  margin: 1vw;
 }
 
 .pup {
-    width: 100%;
-    height: 100%;
-    position: relative;
-    display: inline-block;
-    background-repeat: no-repeat;
-    object-fit: cover;
-    overflow: hidden;
-    top: 100%;
-    transition: 0.5s;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  display: inline-block;
+  background-repeat: no-repeat;
+  object-fit: cover;
+  overflow: hidden;
+  top: 100%;
+  transition: 0.5s;
 }
 
 .pup:hover {
-    transform: scale(1.2) rotate(0.1)
+  transform: scale(1.2) rotate(0.1);
 }
 
 .hole.up .pup {
-    top: 0;
+  top: 0;
 }
 
 /*---Enter Name Prompt---*/
 
 #prompt {
-    background-color:rgba(255, 250, 250, 0.5);
-    position: absolute;
-    z-index: 999; 
-    height: 100%;
-    width: 100%;
-    text-align: center;
+  background-color: rgba(255, 250, 250, 0.5);
+  position: absolute;
+  z-index: 999;
+  height: 100%;
+  width: 100%;
+  text-align: center;
 }
 
 .form-group {
-    position: relative;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    width: calc(100px + 10vw);
-    background-color: lavender;
-    color: black;
-    border-radius: 60px 10px;
+  position: relative;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: calc(100px + 10vw);
+  background-color: lavender;
+  color: black;
+  border-radius: 60px 10px;
 }
 
 #submit {
-    padding-top: 2%; 
+  padding-top: 2%;
 }
 
 #name-title {
-    padding-top: 2%;
+  padding-top: 2%;
 }
 
 .hidden {
-    display: none;
+  display: none;
 }
-
 
 /*----Headings etc.----*/
 
 .overlay {
-    height: 30vh;
+  height: 30vh;
 }
 
 .title {
-    position: relative;
-    text-align: center;
-    align-content: center;
-    color: orange;
-    font-size: 7vw;
+  position: relative;
+  text-align: center;
+  align-content: center;
+  color: orange;
+  font-size: 7vw;
 }
 
 .title:hover {
-    color: yellow;
-    transition: 1s;
+  color: yellow;
+  transition: 1s;
 }
 
 #score {
-    position: relative;
-    text-align: center;
-    align-content: center;
-    color: orange;
-    font-size: 4vw;
+  position: relative;
+  text-align: center;
+  align-content: center;
+  color: orange;
+  font-size: 4vw;
 }
 
 #score:hover {
-    color: yellow;
-    transition: 1s;
+  color: yellow;
+  transition: 1s;
 }
 
-.start-button {    
-    position: relative;
-    width: 12vw;
-    height: 6vw;
-    align-content: center;
-    transform: translate(-50%, -7%);
-    font-size: calc(9px + 0.7vw);
-    min-width: 76px;
-    min-height: 38px;
-    border-radius: 60px 10px;
-    background-color: snow;
-    color: orange;
-    border: 2px solid black;
+.start-button {
+  position: relative;
+  width: 12vw;
+  height: 6vw;
+  align-content: center;
+  transform: translate(-50%, -7%);
+  font-size: calc(9px + 0.7vw);
+  min-width: 76px;
+  min-height: 38px;
+  border-radius: 60px 10px;
+  background-color: snow;
+  color: orange;
+  border: 2px solid black;
 }
 
 .start-button:hover {
-    background-color: plum;
-    color: yellow;
-    transition: 0.3s;
+  background-color: plum;
+  color: yellow;
+  transition: 0.3s;
 }
 
 #player-name {
-    position: relative;
-    width: 12vw;
-    height: 6vw;
-    align-content: center;
-    transform: translate(50%, -7%);
-    font-size: calc(9px + 0.7vw);
-    min-width: 76px;
-    min-height: 38px;
-    border-radius: 10px 60px;
-    background-color: snow;
-    color: orange;
-    text-align: center;
-    border: 2px solid black;
-    padding: 7% 0% 7% 0%;
+  position: relative;
+  width: 12vw;
+  height: 6vw;
+  align-content: center;
+  transform: translate(50%, -7%);
+  font-size: calc(9px + 0.7vw);
+  min-width: 76px;
+  min-height: 38px;
+  border-radius: 10px 60px;
+  background-color: snow;
+  color: orange;
+  text-align: center;
+  border: 2px solid black;
+  padding: 7% 0% 7% 0%;
 }
 
 #player-name:hover {
-    background-color: plum;
-    color: yellow;
-    transition: 0.3s;
+  background-color: plum;
+  color: yellow;
+  transition: 0.3s;
 }
 
 .player {
-    position: relative;
-    align-content: center;
-    display: inline-flex;
-    left: 50%;
-    transform: translate(-50%, 10px);
+  position: relative;
+  align-content: center;
+  display: inline-flex;
+  left: 50%;
+  transform: translate(-50%, 10px);
 }
 
 /*---Scorecard---*/
 
 #scorecard {
-    background-color:rgba(255, 250, 250, 0.5);
-    position: absolute;
-    z-index: 998; 
-    height: 100%;
-    width: 100%;
-    text-align: center;
+  background-color: rgba(255, 250, 250, 0.5);
+  position: absolute;
+  z-index: 998;
+  height: 100%;
+  width: 100%;
+  text-align: center;
 }
 
 #card {
-    position: relative;
-    height: calc(100px + 20vh);
-    width: calc(100px + 15vw);
-    left: 50%;
-    top: 25%;
-    transform: translate(-50%, -50%);
-    background-color: rgba(255, 250, 250, 0.8);
+  position: relative;
+  height: calc(100px + 20vh);
+  width: calc(100px + 15vw);
+  left: 50%;
+  top: 25%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(255, 250, 250, 0.8);
 }
 
 #score-dog {
-    position: relative;
-    background-repeat: no-repeat;
-    object-fit: cover;
-    overflow: hidden;
-    height: calc(100px + 5vh);
-    width: calc(100px + 10vw);
+  position: relative;
+  background-repeat: no-repeat;
+  object-fit: cover;
+  overflow: hidden;
+  height: calc(100px + 5vh);
+  width: calc(100px + 10vw);
 }
-
 
 /*----Navbar----*/
 
 .nav-link {
-    text-align: center;
-    color: snow;
+  text-align: center;
+  color: snow;
 }
 
 #nav {
-    background-color: darkorange;;
+  background-color: darkorange;
 }
 
 .nav-link:hover {
-    background-color: yellow;
-    transition: 1s;
-    color:orange;
+  background-color: yellow;
+  transition: 1s;
+  color: orange;
 }
-
 
 /*----Pup unique images----*/
 
 #pup1 {
-    background-image: url("images/puppy-3.svg")
+  background-image: url("images/puppy-3.svg");
 }
 
 #pup2 {
-    background-image: url("images/puppy-2.svg")
+  background-image: url("images/puppy-2.svg");
 }
 
 #pup3 {
-    background-image: url("images/puppy-10.svg")
+  background-image: url("images/puppy-10.svg");
 }
 
 #pup4 {
-    background-image: url("images/puppy-4.svg")
+  background-image: url("images/puppy-4.svg");
 }
 
 #pup5 {
-    background-image: url("images/puppy-3.svg")
+  background-image: url("images/puppy-3.svg");
 }
 
 #pup6 {
-    background-image: url("images/puppy-4.svg")
+  background-image: url("images/puppy-4.svg");
 }
-
