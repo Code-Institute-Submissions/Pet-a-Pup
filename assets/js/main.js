@@ -21,6 +21,8 @@
         playerName.innerHTML = writeName.value;
     }
 
+    //Event-listeners
+
     const submitButton = document.getElementById("submit");
     if (submitButton) {
         submitButton.addEventListener("click", submitName);
@@ -46,7 +48,6 @@
         updateScoreButton.addEventListener("click", updateScores);
     }
 
-
     //Select random hole
 
     let prevHole;
@@ -61,7 +62,7 @@
         return hole;
     }
 
-    // Make pup come out function
+    // Make pup move up and down
 
     let timeUp = false;
 
@@ -77,6 +78,8 @@
 
     //Game functions
 
+    //Scoring functions
+    
     let score = 0;
 
     function pet(e) {
@@ -87,7 +90,10 @@
 
     const scoreText = document.getElementById("score-text");
     const scoreCard = document.getElementById("scorecard");
-    const gameTime = 6000;
+    const gameTime = 20000;
+
+    //Function initialises game, retrieves the score and then at the end pushes it to the array of made-up scores.
+    //Submitscore is called to save the scores to localstorage. 
 
     function startGame() {
         score = 0;
@@ -123,47 +129,49 @@
     scoresArray = [
         {
             name: "Jeff",
-            score: 1539,
+            score: 809,
         },
         {
             name: "Johanna",
-            score: 1435,
+            score: 945,
         },
         {
             name: "Jim",
-            score: 14,
+            score: 745,
         },
         {
             name: "Jessica",
-            score: 1846,
+            score: 126,
         },
         {
             name: "Jasmine",
-            score: 1677,
+            score: 1002,
         },
         {
             name: "John",
-            score: 1423,
+            score: 754,
         },
         {
             name: "Jeremy",
-            score: 1236,
+            score: 846,
         },
         {
             name: "Janet",
-            score: 1543,
+            score: 711,
         },
         {
             name: "Jill",
-            score: 300,
+            score: 645,
         },
         {
             name: "Josh",
-            score: 200,
+            score: 112,
         },
     ];
 
     const topScores = document.getElementById("top-scores");
+
+    //Generates HTML for the scoreboard
 
     function generateScoreBoard(scores) {
         scores.forEach((value, index) => {
@@ -176,6 +184,8 @@
             topScores.innerHTML += playerScore;
         }); 
     }
+
+    //Save new scores to localstorage and when view top scores is pressed on topscores.html updatescores runs and updates from localstorage 
 
     function submitScore() {
         localStorage.setItem("topScoreList", JSON.stringify(scoresArray));

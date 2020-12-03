@@ -154,9 +154,10 @@ added much value to the page in my opinion.
 
 ## Deployment
   
-  The project is deployed on github and can be reached here: https://marcusaureliuslinden.github.io/Pet-a-Pup/index.html
+  The project is deployed on Github Pages and can be reached here: https://marcusaureliuslinden.github.io/Pet-a-Pup/index.html
 
-  Code is public and can be found on my github pages at this repository address: https://github.com/MarcusAureliusLinden/Pet-a-Pup
+  Code is public and can be found on my github pages at this repository address: https://github.com/MarcusAureliusLinden/Pet-a-Pup. From There
+  the code can be downloaded or cloned and deployed elsewhere. 
 
 ## Credits
 ### Images
@@ -170,6 +171,8 @@ Pup with bone: Image by <a href="https://pixabay.com/users/grafikacesky-947552/?
 Beagle pup: Image by <a href="https://pixabay.com/users/clker-free-vector-images-3736/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=48472">Clker-Free-Vector-Images</a> from <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=48472">Pixabay</a>
 
 Dalmatian: Image by <a href="https://pixabay.com/users/openclipart-vectors-30363/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=150954">OpenClipart-Vectors</a> from <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=150954">Pixabay</a>
+
+Background: Image by Image by <a href="https://pixabay.com/users/openclipart-vectors-30363/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=152502">OpenClipart-Vectors</a> from <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=152502">Pixabay</a>
 
 ## Acknowledgements
 
