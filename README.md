@@ -57,12 +57,11 @@ added much value to the page in my opinion.
 
 ### Screenshots 
 
-![]assets/images/petapupfront.png 
+![](assets/images/petapupfront.png) 
 
-![]assets/images/petapupactivegame.png 
+![](assets/images/petapupactivegame.png) 
 
-![]assets/images/petapuptopscores.png 
-
+![](assets/images/petapuptopscores.png) 
 
 ## Features
 ### Existing Features
