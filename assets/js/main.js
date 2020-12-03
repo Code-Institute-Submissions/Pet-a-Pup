@@ -1,17 +1,12 @@
-
-
 (function () {
     //Fundamental HTML-declarations for game functionality
 
     const pups = document.querySelectorAll(".pup");
     const holes = document.querySelectorAll(".hole");
     const scoreDisplay = document.getElementById("score");
-    const startButton = document.getElementById("start");
-    const magicDog = document.getElementById("pup3");
 
     // Enter name prompt
 
-    const nameButton = document.getElementById("submit");
     let playerName = document.getElementById("player-name");
     let writeName = document.getElementById("enter-name");
     const namePrompt = document.getElementById("prompt");
@@ -26,12 +21,10 @@
         playerName.innerHTML = writeName.value;
     }
 
-
-
     const submitButton = document.getElementById("submit");
     if (submitButton) {
         submitButton.addEventListener("click", submitName);
-    } //do the same for the otehr ones 
+    } 
 
     const startGameButton = document.getElementById("start-game-btn");
     if (startGameButton) {
@@ -119,13 +112,13 @@
         return b.score - a.score;
     }
 
-
-
     function playAgain() {
         timeUp = false;
         scoreCard.classList.add("hidden");
         startGame();
     }
+
+    //Scoring - including array with made-up scores to populate the highscores list
 
     scoresArray = [
         {
@@ -148,6 +141,26 @@
             name: "Jasmine",
             score: 1677,
         },
+        {
+            name: "John",
+            score: 1423,
+        },
+        {
+            name: "Jeremy",
+            score: 1236,
+        },
+        {
+            name: "Janet",
+            score: 1543,
+        },
+        {
+            name: "Jill",
+            score: 300,
+        },
+        {
+            name: "Josh",
+            score: 200,
+        },
     ];
 
     const topScores = document.getElementById("top-scores");
@@ -161,16 +174,18 @@
                         </tr>
                                  `;
             topScores.innerHTML += playerScore;
-        }) 
+        }); 
     }
 
     function submitScore() {
         localStorage.setItem("topScoreList", JSON.stringify(scoresArray));
-        //generateScoreBoard(scoresArray);
     }
 
     function updateScores() {
+        var scoreBoard = document.getElementById("top-scores");
+        scoreBoard.innerHTML = "";
         let updatedScores = JSON.parse(localStorage.getItem("topScoreList"));
+        updatedScores.splice(10);
         generateScoreBoard(updatedScores);
     }
 })();

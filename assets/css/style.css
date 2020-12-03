@@ -5,7 +5,7 @@
 }
 
 .background {
-  background-image: url("images/landscape.png");
+  background-image: url("../images/landscape.png");
   background-repeat: no-repeat;
   background-size: cover;
   position: absolute;
@@ -19,7 +19,7 @@
   width: 90%;
   position: absolute;
   left: 50%;
-  transform: translate(-50%, 90%);
+  transform: translate(-45%, 90%);
   bottom: 55%;
 }
 
@@ -47,10 +47,6 @@
   overflow: hidden;
   top: 100%;
   transition: 0.5s;
-}
-
-.pup:hover {
-  transform: scale(1.2) rotate(0.1);
 }
 
 .hole.up .pup {
@@ -222,28 +218,43 @@
   color: orange;
 }
 
+/*----Top scores styles----*/
+
+#update-score-btn {
+    left: 50%;
+    text-align: center;
+    color: orange;
+    background-color: yellow;
+    transform: translate(-50%, 0% );
+    position: relative;
+}
+
+.table-dark {
+    color: darkorange;
+}
+
 /*----Pup unique images----*/
 
 #pup1 {
-  background-image: url("images/puppy-3.svg");
+  background-image: url("../images/puppy-3.svg");
 }
 
 #pup2 {
-  background-image: url("images/puppy-2.svg");
+  background-image: url("../images/puppy-2.svg");
 }
 
 #pup3 {
-  background-image: url("images/puppy-10.svg");
+  background-image: url("../images/puppy-10.svg");
 }
 
 #pup4 {
-  background-image: url("images/puppy-4.svg");
+  background-image: url("../images/puppy-4.svg");
 }
 
 #pup5 {
-  background-image: url("images/puppy-3.svg");
+  background-image: url("../images/puppy-3.svg");
 }
 
 #pup6 {
-  background-image: url("images/puppy-4.svg");
+  background-image: url("../images/puppy-4.svg");
 }
