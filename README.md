@@ -8,6 +8,7 @@ Play game here: https://marcusaureliuslinden.github.io/Pet-a-Pup/index.html
         * User Stories
         * Design
         * Wireframes
+        * Screenshots
     2. Features
         * Existing Features
         * Features Left to Implement
@@ -53,6 +54,15 @@ As the project itself was rather simple in its form I didn't spend too much time
 design differences in HTML/CSS pretty early on. A simple wireframe was made here: https://wireframe.cc/RxCxz9
 Most of the game follows the wireframe. The About page has been disregarded as it wasn't really necessary and wouldn't have
 added much value to the page in my opinion. 
+
+### Screenshots 
+
+![]assets/images/petapupfront.png 
+
+![]assets/images/petapupactivegame.png 
+
+![]assets/images/petapuptopscores.png 
+
 
 ## Features
 ### Existing Features
